@@ -1,5 +1,5 @@
 function updateResult(value) {
-  let result = document.getElementById("result-span");
+  let result = document.getElementById("result");
   result.textContent = value;
   result.scrollLeft = result.scrollWidth;
 }

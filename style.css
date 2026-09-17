@@ -31,12 +31,12 @@ body {
   border-radius: 12px;
 }
 
-.result-con span {
+#result {
   overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 6px;
 }
 
-span::-webkit-scrollbar {
+#result::-webkit-scrollbar {
   height: 8px;
 }
