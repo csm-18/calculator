@@ -10,6 +10,11 @@ function backSpaceAction() {
   input.value = input.value.slice(0, len - 1);
 }
 
+const backSpaceButton = document.getElementById("back-space");
+backSpaceButton.addEventListener("click", () => {
+  backSpaceAction();
+});
+
 function appendToInput(char) {
   const input = document.getElementById("input");
   input.value += char;
