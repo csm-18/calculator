@@ -1,8 +1,4 @@
-function updateResult(value) {
-  let result = document.getElementById("result");
-  result.textContent = value;
-  result.scrollLeft = result.scrollWidth;
-}
+import { calculate } from "./calculator.js";
 
 function backSpaceAction() {
   const input = document.getElementById("input");
@@ -26,4 +22,24 @@ buttons.forEach((btn) => {
     const char = btn.textContent;
     appendToInput(char);
   });
+});
+
+function updateResult(value) {
+  let result = document.getElementById("result");
+  result.textContent = value;
+  result.scrollLeft = result.scrollWidth;
+}
+
+const equalsButton = document.getElementById("equals-button");
+equalsButton.addEventListener("click", () => {
+  const input = document.getElementById("input");
+  let exp = input.value;
+  let result = calculate(exp);
+
+  if (typeof result === "string") {
+    updateResult(result);
+  } else {
+    updateResult(`${exp} = ${result}`);
+    input.value = "";
+  }
 });
