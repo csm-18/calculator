@@ -3,10 +3,22 @@ function updateResult(value) {
   result.textContent = value;
   result.scrollLeft = result.scrollWidth;
 }
-updateResult("0123456789abcdhhhhhhhhhhhhhhhhhhhhhhhhhh = 5.5");
 
 function backSpaceAction() {
-  let input = document.getElementById("input");
+  const input = document.getElementById("input");
   let len = input.value.length;
   input.value = input.value.slice(0, len - 1);
 }
+
+function appendToInput(char) {
+  const input = document.getElementById("input");
+  input.value += char;
+}
+
+const buttons = document.querySelectorAll(".btn");
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const char = btn.textContent;
+    appendToInput(char);
+  });
+});
