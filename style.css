@@ -4,6 +4,7 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 body {
@@ -48,9 +49,9 @@ body {
 
 #input {
   margin-top: 1rem;
-  padding: 1.5rem;
+  padding: 1.3rem;
   border-radius: 12px;
-  font-size: 2rem;
+  font-size: 2.2rem;
   background: #f8fafc;
   color: #0f172a;
   text-align: end;

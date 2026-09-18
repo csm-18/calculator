@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+  .con {
+    padding: 2rem;
+    border-radius: 0px;
+    width: 100%;
+    height: 100dvh;
+  }
+
+  .result-con {
+    padding: 1rem;
+    border-radius: 0px;
+  }
+
+  #result {
+    padding-bottom: 0px;
+    font-size: 2rem;
+  }
+
+  #result::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  #input {
+    margin-top: 0.8rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0px;
+    font-size: 2rem;
+  }
+
+  .buttons-con {
+    margin-bottom: 4rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .buttons-row {
+    gap: 0.8rem;
+  }
+
+  button {
+    height: 3.8rem;
+    font-size: 2rem;
+  }
+}
