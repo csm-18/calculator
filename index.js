@@ -32,14 +32,14 @@ function updateResult(value) {
 
 const equalsButton = document.getElementById("equals-button");
 equalsButton.addEventListener("click", () => {
-  const input = document.getElementById("input");
-  let exp = input.value;
-  let result = calculate(exp);
-
-  if (typeof result === "string") {
-    updateResult(result);
-  } else {
-    updateResult(`${exp} = ${result}`);
-    input.value = "";
-  }
+//  const input = document.getElementById("input");
+//  let exp = input.value;
+//  let result = calculate(exp);
+//
+//  if (typeof result === "string") {
+//    updateResult(result);
+//  } else {
+//    updateResult(`${exp} = ${result}`);
+//    input.value = "";
+//  }
 });
