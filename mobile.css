@@ -1,4 +1,8 @@
 @media only screen and (max-width: 600px) {
+  html,
+  body {
+    overflow: hidden;
+  }
   .con {
     padding: 2rem;
     border-radius: 0px;
